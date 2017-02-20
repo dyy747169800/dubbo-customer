@@ -9,7 +9,7 @@
 
     <dubbo:application name="demo-consumer"  organization="dubbox"/>
 
-    <dubbo:registry address="zookeeper://192.168.117.128:2181" />
+    <dubbo:registry address="zookeeper://192.168.117.129:2181" />
 
     <dubbo:monitor protocol="registry"/>
 

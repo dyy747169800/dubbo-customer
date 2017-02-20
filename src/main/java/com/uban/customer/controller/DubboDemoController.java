@@ -1,5 +1,4 @@
 package com.uban.customer.controller;
-
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.TypeReference;
@@ -9,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
@@ -29,7 +27,6 @@ public class DubboDemoController {
         JSONObject result = dubboDemoService.demo(val);
         ModelAndView demo = new ModelAndView("demo");
         demo.addObject("result",result.getString("result"));
-
 
         JSONObject users = dubboDemoService.getUsers();
         if(users.get("result")!=null){
